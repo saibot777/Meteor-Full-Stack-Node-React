@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import {Players} from './../api/players';
 
@@ -17,4 +18,10 @@ export default class Player extends React.Component {
             </p>
         );
     }
-}
+};
+
+Player.propTypes = {
+  title: PropTypes.string.isRequired
+};
+
+
